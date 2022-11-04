@@ -1,0 +1,238 @@
+/* intuitivnější box-sizing pro všechny prvky na stránce */
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+
+/*
+	Poznámky:
+	- maximální šířka obsahu uvnitř sekcí je 1100px
+	- "pruh" s obsahem obsah je vycentrovaný na stránce
+	- všechny sekce mají nahoře a dole padding 80px
+	- kromě hlavičky a patičky, které mají jen 30px
+	- nadpisy jsou fontem Playfair Display, tučně
+	- veškerý další text na stránce fontem Lora
+	- výchozí velikost textu na stránce je 18px, řádkování 1.5
+
+	Velikosti nadpisů:
+	h1 - 52px  (nadpis v horní Hero sekci s cupcakem)
+	h2 - 36px  (nadpisy v dalších sekcích)
+	h3 - 18px  (název produktu v Dnešní nabídce)
+	Nadpisy mají řádkování jen 1.25
+
+	Barvy:
+	#f195b2		růžová - tlačítka a zvýraznění
+	#d2567d		tmavá růžová - hover/aktivní tlačítka
+	#3e606b		tmavá tyrkysová - na nadpisy
+	#242424		(skoro) černá - na běžný text
+	#f0f0f0		světle šedé pozadí prostřední sekce
+	#303339		tmavé pozadí patičky
+*/
+
+
+body {
+	margin: 0;
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;	
+}
+
+.logo{
+	width: 170px;
+	padding: 30px 0 30px 0;
+}
+
+.hlavicka{
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: auto; 
+	margin-right: auto;
+	max-width: 1100px;
+}
+
+.menu{
+	display: flex;
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	padding: 10px 15px;
+	color: black;
+}
+
+.calltoacction{
+	background-color:#f195b2;
+	border-radius: 30px;
+}
+
+.call a:hover{
+	background-color:#d2567d}
+
+h1{
+	font-size: 52px;
+	padding-right: 40%;
+	padding-left: ;
+}
+
+h2{
+	font-size: 36px;
+	color: #3e606b;
+
+}
+
+h3{
+	font-size: 18px;
+}
+
+.heroo{
+	background-image: url(images/cupcake.jpg) ;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+.hero{	
+	color: white;
+	padding-top: 80px;	
+	padding-bottom: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1100px;
+}
+
+
+.hero2{
+	font-style: italic;
+	padding-right: 40%;	
+
+}
+
+
+.sloupec11{
+background-color: white;
+}
+
+.sloupec1{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1100px;
+	background-color: white;
+	display: flex;
+	align-content: center;
+	gap: 30px;
+}
+
+
+.cukrarka{
+	border-radius: 5px;
+}
+
+.levo,
+.pravo{
+	margin-bottom: 80px;
+	margin-top: 80px;
+}
+
+
+.callto2{
+	background-color:#f195b2;
+	border-radius: 30px;
+	text-align: center;
+
+}
+
+.callto3 a:hover{
+    background-color:#d2567d	;
+    }
+
+
+
+
+.all{
+	background-color:#f0f0f0;
+}
+
+
+.sloupec2{
+	margin: 0;
+	background-color:#f0f0f0;
+	padding: 80px 0;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1100px;
+	}
+
+.nabidka{
+	margin-left: 65px;
+}
+
+.sloupec22{
+	display: flex;
+	justify-content: center;
+	max-width: 1100px;
+}
+
+.produkt1,
+.produkt2,
+.produkt3,
+.produkt4
+{
+	background-color: white;
+	flex-shrink: 1;
+	width: 220px;
+	max-width: 20%;
+	border-radius: 5px;
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+
+.produkt1,
+.produkt2,
+.produkt3{
+	margin-right: 30px;
+}
+
+.dort,
+.livanec,
+.kolac,
+.buchticka{
+	border-radius: 5px 5px 0 0;
+	width: 220px;
+}
+
+
+
+.slou{
+	background-color: white;
+
+}
+
+.peceni{
+	border-radius: 5px;
+}
+
+.sloupec3{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1100px;
+	align-content: center;
+	gap: 30px;
+}
+
+.sloupec3,
+.sloupec31{
+	margin-bottom: 80px;
+	margin-top: 80px;
+}
+
+
+
+footer{
+	background-color: 	#303339;
+	padding: 30px;
+	color: white;
+	text-align: center;
+}
